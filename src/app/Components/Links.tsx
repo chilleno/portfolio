@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Button from './Button';
 
@@ -24,9 +26,20 @@ let links = [
   },
 ]
 
-const Links: React.FC = () => {
+interface LinkProps {
+  darkMode: boolean;
+};
+
+let className = {
+  main: {
+    dark: "flex justify-center items-center pt-32 gap-5",
+    light: "flex justify-center items-center pt-32 gap-5",
+  }
+}
+
+const Links: React.FC<LinkProps> = ({ darkMode }) => {
   return (
-    <div className="flex justify-center items-center mt-32 gap-5">
+    <div className={darkMode === true ? className.main.dark : className.main.light}>
       {
         links.map((link, index) => (
           <Button
@@ -34,7 +47,7 @@ const Links: React.FC = () => {
             url={link.url}
             icon={link.icon}
             text={link.text}
-            darkMode={true}
+            darkMode={darkMode}
           />
         ))
       }
