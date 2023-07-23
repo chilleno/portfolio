@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FixedHeader: React.FC = () => {
+const Header: React.FC = () => {
     return (
         <header className="fixed top-0 left-0 w-full text-white py-4 px-8 flex content-center justify-center gap-96">
             <h1 className="text-md font-bold">Antonio González</h1>
@@ -14,4 +14,4 @@ const FixedHeader: React.FC = () => {
     );
 };
 
-export default FixedHeader;
+export default Header;

@@ -1,10 +1,10 @@
-import FixedHeader from "./Components/FixedHeader";
+import Header from "./Components/Header";
 import Avatar from "./Components/Avatar";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <FixedHeader />
+      <Header />
       <Avatar />
     </main>
   )
