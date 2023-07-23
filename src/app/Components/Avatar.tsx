@@ -1,18 +1,36 @@
 import React from 'react';
 
-const Avatar: React.FC = () => {
+interface AvatarProps {
+    darkMode: boolean;
+};
+
+let className = {
+    main: {
+        dark: "flex justify-center items-center pt-32",
+        light: "flex justify-center items-center pt-32",
+    },
+    firstImage: {
+        dark: "w-full h-full absolute transition-transform transform rounded-full ring-white ring-4",
+        light: "w-full h-full absolute transition-transform transform rounded-full ring-black ring-4"
+    },
+    secondImage: {
+        dark: "w-full h-full absolute rounded-full transition-transform transform rotate-y-180 opacity-0 hover:opacity-100 ring-white ring-4",
+        light: "w-full h-full absolute rounded-full transition-transform transform rotate-y-180 opacity-0 hover:opacity-100 ring-black ring-4"
+    }
+};
+const Avatar: React.FC<AvatarProps> = ({ darkMode }) => {
     return (
-        <div className="flex justify-center items-center mt-32">
+        <div className={darkMode ? className.main.dark : className.main.light}>
             <div className="w-48 h-48 relative image-flipper">
                 <img
                     src="/fit-into-society.jpeg"
                     alt="Fit into society"
-                    className="w-full h-full absolute transition-transform transform rounded-full"
+                    className={darkMode ? className.firstImage.dark : className.firstImage.light}
                 />
                 <img
                     src="/be-happy.png"
                     alt="Be happy"
-                    className="w-full h-full absolute rounded-full transition-transform transform rotate-y-180 opacity-0 hover:opacity-100"
+                    className={darkMode ? className.secondImage.dark : className.secondImage.light}
                 />
             </div>
         </div>
