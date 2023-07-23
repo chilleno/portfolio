@@ -24,6 +24,13 @@ let icons = {
     },
 };
 
+let className = {
+    button: {
+        dark: "ring-2 ring-white text-white hover:ring-4 rounded-full py-2 px-3 flex gap-3 bg-black",
+        light: "ring-2 ring-black text-black hover:ring-4 rounded-full py-2 px-3 flex gap-3 bg-white",
+    }
+}
+
 const Button: React.FC<ButtonProps> = ({ url, icon, text, darkMode }) => {
 
     const [selectedIcon, setSelectedIcon] = useState<string>('');
@@ -61,12 +68,12 @@ const Button: React.FC<ButtonProps> = ({ url, icon, text, darkMode }) => {
                     break;
             }
         }
-    }, []);
+    }, [darkMode]);
 
     return (
         <a href={url} target="_blank">
             <button
-                className="ring-2 ring-white hover:ring-4 rounded-full py-2 px-3 flex gap-3"
+                className={darkMode ? className.button.dark : className.button.light}
             >
                 <img
                     src={selectedIcon}
