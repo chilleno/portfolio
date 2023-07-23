@@ -18,10 +18,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.image-flipper:hover img:first-child {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.image-flipper:not(:hover) img:first-child {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.image-flipper:hover img:last-child {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.image-flipper:not(:hover) img:last-child {
+  transform: rotateY(180deg);
+  opacity: 0;
 }
