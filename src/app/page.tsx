@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Header from "./Components/Header";
 import Avatar from "./Components/Avatar";
+import MainText from './Components/MainText';
 import Links from "./Components/Links";
 import Footer from "./Components/Footer";
 
@@ -28,6 +29,9 @@ export default function Home() {
         setDarkMode={setDarkMode}
       />
       <Avatar
+        darkMode={darkMode}
+      />
+      <MainText
         darkMode={darkMode}
       />
       <Links
