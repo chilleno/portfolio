@@ -8,8 +8,8 @@ interface MainTextProps {
 
 let className = {
     main: {
-        dark: "flex flex-row pt-20 sm:px-12 sm:text-justify text-xl font-thin text-white",
-        light: "flex flex-row pt-20 sm:px-12 sm:text-justify text-xl font-thin text-black",
+        dark: "flex flex-row pt-32 sm:px-12 sm:text-justify text-xl font-thin text-white",
+        light: "flex flex-row pt-32 sm:px-12 sm:text-justify text-xl font-thin text-black",
     },
 };
 
