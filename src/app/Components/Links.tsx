@@ -32,8 +32,8 @@ interface LinkProps {
 
 let className = {
   main: {
-    dark: "flex justify-center items-center pt-32 gap-5",
-    light: "flex justify-center items-center pt-32 gap-5",
+    dark: "flex xl:flex-row lg:flex-row md:flex-row sm:flex-col w-full justify-center items-center pt-28 gap-5",
+    light: "flex xl:flex-row lg:flex-row md:flex-row sm:flex-col w-full justify-center items-center pt-28 gap-5",
   }
 }
 
