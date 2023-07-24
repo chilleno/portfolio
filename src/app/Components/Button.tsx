@@ -26,8 +26,8 @@ let icons = {
 
 let className = {
     button: {
-        dark: "ring-2 ring-white text-white hover:ring-4 rounded-full py-2 px-3 flex gap-3 bg-black",
-        light: "ring-2 ring-black text-black hover:ring-4 rounded-full py-2 px-3 flex gap-3 bg-white",
+        dark: "w-full ring-2 ring-white text-white hover:ring-4 hover:font-bold rounded-full py-2 px-3 flex gap-3 bg-black",
+        light: "w-full ring-2 ring-black text-black hover:ring-4 hover:font-bold rounded-full py-2 px-3 flex gap-3 bg-white",
     }
 }
 
@@ -71,7 +71,7 @@ const Button: React.FC<ButtonProps> = ({ url, icon, text, darkMode }) => {
     }, [darkMode]);
 
     return (
-        <a href={url} target="_blank">
+        <a className="" href={url} target="_blank">
             <button
                 className={darkMode ? className.button.dark : className.button.light}
             >
