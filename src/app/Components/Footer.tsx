@@ -6,8 +6,8 @@ interface FooterProps {
 
 let className = {
     main: {
-        dark: "fixed bottom-0 left-0 w-full font-normal text-white text-center py-4",
-        light: "fixed bottom-0 left-0 w-full font-normal text-black text-center py-4",
+        dark: "fixed bottom-0 left-0 w-full font-normal text-white bg-black text-center py-4",
+        light: "fixed bottom-0 left-0 w-full font-normal text-black bg-white text-center py-4",
     }
 }
 
