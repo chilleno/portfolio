@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 interface AvatarProps {
     darkMode: boolean;
@@ -23,12 +22,12 @@ const Avatar: React.FC<AvatarProps> = ({ darkMode }) => {
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
             <div className="w-48 h-48 relative image-flipper">
-                <Image
+                <img
                     src="/fit-into-society.jpeg"
                     alt="Fit into society"
                     className={darkMode ? className.firstImage.dark : className.firstImage.light}
                 />
-                <Image
+                <img
                     src="/be-happy.png"
                     alt="Be happy"
                     className={darkMode ? className.secondImage.dark : className.secondImage.light}
