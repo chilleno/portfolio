@@ -46,7 +46,7 @@ const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
                     I started building software on public since 2023.
                 </p>
                 <p className="text-lg text-justify">
-                  I'm currently building in public projects with Next.js, React.js, Prisma, TaildwindCSS, MongoDB and Figma. 
+                  I&apos;m currently building in public projects with Next.js, React.js, Prisma, TaildwindCSS, MongoDB and Figma. 
                 </p>
             </div>
         </div>
