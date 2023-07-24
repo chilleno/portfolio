@@ -8,8 +8,8 @@ import Footer from "./Components/Footer";
 
 let className = {
   main: {
-    dark: "min-h-screen max-h-screen bg-black",
-    light: "min-h-screen max-h-screen bg-white",
+    dark: "min-h-screen bg-black",
+    light: "min-h-screen bg-white",
   }
 }
 
