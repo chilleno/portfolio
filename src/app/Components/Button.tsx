@@ -71,7 +71,7 @@ const Button: React.FC<ButtonProps> = ({ url, icon, text, darkMode }) => {
     }, [darkMode]);
 
     return (
-        <a className="" href={url} target="_blank">
+        <a className="w-[140px]" href={url} target="_blank">
             <button
                 className={darkMode ? className.button.dark : className.button.light}
             >
