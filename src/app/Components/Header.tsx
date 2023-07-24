@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
 
     return (
         <header className={darkMode ? className.main.dark : className.main.light}>
-            <h1 className="text-md font-bold xl:mr-40 lg:mr-10">Antonio <span className="xl:inline lg:inline md:inline sm:hidden">González</span></h1>
+            <a href="/" className="hover:font-bold hover:cursor-pointer"><h1 className="text-md font-bold xl:mr-40 lg:mr-10">Antonio <span className="xl:inline lg:inline md:inline sm:hidden">González</span></h1></a>
             <div className="flex gap-5 text-md">
                 <a href="/projects" className="hover:font-bold">Projects</a>
                 <a href="/cv" className="hover:font-bold">CV</a>
