@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface ButtonProps {
     url: string;
@@ -75,8 +76,9 @@ const Button: React.FC<ButtonProps> = ({ url, icon, text, darkMode }) => {
             <button
                 className={darkMode ? className.button.dark : className.button.light}
             >
-                <img
+                <Image
                     src={selectedIcon}
+                    alt={"button-icon-" + icon}
                     className="w-6 h-6"
                 />
                 {text}
