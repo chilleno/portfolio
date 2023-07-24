@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Header from "../Components/Header";
 import MainText from '../cv/Components/MainText';
+import Experience from '../cv/Components/Experience';
 import Footer from "../Components/Footer";
 
 let className = {
@@ -27,6 +28,9 @@ export default function Home() {
         setDarkMode={setDarkMode}
       />
       <MainText
+        darkMode={darkMode}
+      />
+      <Experience
         darkMode={darkMode}
       />
       <Footer
