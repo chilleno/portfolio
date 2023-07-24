@@ -13,7 +13,7 @@ let className = {
 const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
-            <div className="w-3/12 xl:inline lg:inline md:inline sm:hidden" />
+            <div className="w-3/12 xl:inline lg:inline md:hidden sm:hidden" />
             <div className="xl:w-6/12 sm:w-full flex flex-col gap-5">
                 <h1 className="font-normal">Hello there,</h1>
                 <h1 className="font-bold">I&apos;m Antonio.</h1>
