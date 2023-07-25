@@ -16,10 +16,10 @@ let className = {
 const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
-            <div className="w-3/12 xl:inline lg:inline md:hidden sm:hidden" />
-            <div className="xl:w-6/12 sm:w-full flex flex-col gap-5">
-                <div className="flex flex-row gap-3">
-                    <h1 className="font-bold text-4xl py-1">Antonio González Flores.</h1>
+            <div className="xl:w-3/12 lg:w-1/6 xl:inline lg:inline md:hidden sm:hidden" />
+            <div className="xl:w-6/12 lg:w-7/12 lg:ml-12 sm:w-full flex flex-col gap-5">
+                <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-3">
+                    <h1 className="font-bold xl:text-4xl md:text-4xl sm:text-4xl lg:text-3xl py-1 justify-center content-center flex">Antonio González</h1>
                     <div className="flex flex-row gap-5 content-center justify-center">
                         <Button
                             url="https://github.com/chilleno"

@@ -14,8 +14,8 @@ let className = {
 const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
-            <div className="w-3/12 xl:inline lg:inline md:hidden sm:hidden" />
-            <div className="xl:w-6/12 sm:w-full flex flex-col gap-5 h-full pb-20">
+            <div className="xl:w-3/12 lg:w-2/12 xl:inline lg:inline md:hidden sm:hidden" />
+            <div className="xl:w-6/12 lg:w-7/12 lg:ml-12 sm:w-full flex flex-col gap-5 h-full pb-20">
                 <h1 className="font-bold text-4xl py-1">Experience</h1>
                 <div className="flex flex-row gap-5 py-5">
                     <div>
