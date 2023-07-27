@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import ContactForm from './components/ContactForm';
 
 let className = {
   main: {
@@ -25,8 +26,9 @@ export default function Home() {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
-     
-      Projects:
+      <ContactForm
+        darkMode={darkMode}
+      />
       <Footer
         darkMode={darkMode}
       />
