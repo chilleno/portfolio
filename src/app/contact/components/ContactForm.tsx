@@ -57,11 +57,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkMode }) => {
         !isFormSubmitted ?
             (
                 isProcessing ?
-                    <div className="max-w-md mx-auto pt-32 text-white justify-center items-center flex">
+                    <div className={"max-w-md mx-auto pt-32 px-5 justify-center items-center flex" + (darkMode ? " text-white" : " text-black")}>
                         <h1 className="font-bold text-3xl py-1" > Loading...</h1 >
                     </div>
                     :
-                    <form onSubmit={handleSubmit} className="max-w-md mx-auto pt-32 text-white">
+                    <form onSubmit={handleSubmit} className="max-w-md mx-auto pt-32 text-white px-5">
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-sm font-bold mb-2">
                                 Name:
@@ -117,7 +117,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkMode }) => {
                     </form>
             )
             :
-            <div className="max-w-md mx-auto pt-32 text-white">
+            <div className={"max-w-md mx-auto pt-32 px-5" + (darkMode ? " text-white" : " text-black")}>
                 < h1 className="font-bold text-3xl py-1" > Thanks for your message!</h1 >
                 <h1 className="text-md py-1 px-6">I will do the impossible to reply to you ASAP!</h1>
             </div>
