@@ -23,7 +23,7 @@ let projects: Project[] = [
     },
     {
         repository: "nsfta",
-        description: "Web inspired in a topic of a podcast that I listen. The goal of this repo was lear tailwindCSS and Next.js."
+        description: "Web inspired in a topic of a podcast that I listen. The goal of this repo was learn tailwindCSS and Next.js."
     },
     {
         repository: "portfolio",
