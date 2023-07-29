@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Header from "../Components/Header";
+import ProjectList from "./components/ProjectList";
 import Footer from "../Components/Footer";
 
 let className = {
@@ -25,7 +26,9 @@ export default function Home() {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
-      Projects:
+      <ProjectList
+        darkMode={darkMode}
+      />
       <Footer
         darkMode={darkMode}
       />
