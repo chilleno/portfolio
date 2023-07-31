@@ -10,8 +10,8 @@ interface ProjectDetailProps {
 
 let className = {
     main: {
-        dark: "flex flex-row pt-20 xl:px-0 lg:px-0 md:px-12 sm:px-12 sm:text-justify text-xl font-thin text-white",
-        light: "flex flex-row pt-20  xl:px-0 lg:px-0 md:px-12 sm:px-12 sm:text-justify text-xl font-thin text-black",
+        dark: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20 gap-5 xl:px-0 lg:px-0 md:px-0 sm:px-0 sm:text-justify text-xl font-thin text-white",
+        light: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20  xl:px-0 lg:px-0 md:px-0 sm:px-0 sm:text-justify text-xl font-thin text-black",
     },
 };
 
@@ -26,7 +26,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, des
         const today = new Date();
         const last7Days = [];
 
-        for (let i = 20; i >= 0; i--) {
+        for (let i = 23; i >= 0; i--) {
             const date = new Date(today);
             date.setDate(today.getDate() - i);
             const month = monthNames[date.getMonth()];
@@ -65,15 +65,15 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, des
 
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
-            <div className="w-8/12 gap-10 flex flex-col">
+            <div className="xl:w-8/12 lg:w-8/12 md:w-full sm:w-full gap-10 flex flex-col">
                 <div>
                     <a className="font-bold underline text-4xl" href={"https://github.com/chilleno/" + repository}><h1>{repository}</h1></a>
                 </div>
                 <div>
-                    <p className="text-xl pr-20">{description}</p>
+                    <p className="text-xl xl:pr-20 lg:pr-20 md:pr-0 sm:pr-0">{description}</p>
                 </div>
             </div>
-            <div className="w-4/12 h-40 flex border boder-2 border-white rounded-xl">
+            <div className="xl:w-4/12 lg:w-4/12 md:w-full sm:w-full h-40 flex border boder-2 border-white rounded-xl">
                 <ActivityGraph
                     darkMode={darkMode}
                     labels={labels}
