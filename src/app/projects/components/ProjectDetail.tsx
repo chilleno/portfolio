@@ -52,11 +52,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, des
             data.map((element: any) => {
                 let commitDate = new Date(element.commit.committer.date);
                 let currentLabel = monthNames[commitDate.getMonth()] + ' ' + commitDate.getDate();
-                if (labels.indexOf(currentLabel) >= 0) {
+                if (labels.indexOf(currentLabel) >= 0 && (values[labels.indexOf(currentLabel)] === undefined))  {
                     values[labels.indexOf(currentLabel)] = 0;
                 }
                 values[labels.indexOf(currentLabel)] = values[labels.indexOf(currentLabel)] + 1;
-
             })
             setLabels(labels);
             setValues(values);
