@@ -18,7 +18,7 @@ interface Project {
 
 let projects: Project[] = [
     {
-        repository: "chaintask",
+        repository: "HabitHarbor",
         description: "App inspired in atomic habits book. Task manager, Pomodoro Clock, Water Drink Track and more."
     },
     {
