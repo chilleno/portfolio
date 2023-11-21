@@ -13,21 +13,25 @@ let className = {
 
 interface Project {
     repository: string;
+    link: string;
     description: string;
 }
 
 let projects: Project[] = [
     {
         repository: "HabitHarbor",
-        description: "App inspired in atomic habits book. Task manager, Pomodoro Clock, Water Drink Track and more."
+        link:"https://habitharbor.app/",
+        description: 'An app inspired by the principles of the "Atomic Habits" book, HabitHarbor is more than just a task manager. It features a comprehensive suite, including a Pomodoro Clock, Water Intake Tracker, and more.'
     },
     {
-        repository: "nsfta",
-        description: "Web inspired in a topic of a podcast that I listen. The goal of this repo was learn tailwindCSS and Next.js."
+        repository: "NSFTA",
+        link:"https://nsfta.vercel.app/",
+        description: "A web project inspired by a podcast topic that caught my interest. The primary objective of this repository was to delve into the intricacies of Tailwind CSS and Next.js, contributing to my ongoing learning journey."
     },
     {
-        repository: "portfolio",
-        description: "This is the page that you are currently navigating."
+        repository: "Portfolio",
+        link:"https://antonio.systems/",
+        description: "Welcome to my portfolio—the page you're currently exploring. Here, you'll find a curated collection of my work, experiences, and a glimpse into my journey as a software engineer."
     },
 ]
 
@@ -43,6 +47,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ darkMode }) => {
                             key={'project_' + index}
                             darkMode={darkMode}
                             repository={project.repository}
+                            link={project.link}
                             description={project.description}
                         />
                     ))
