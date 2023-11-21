@@ -30,18 +30,17 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Mar 2022 - Present</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            <b>Scotiabank</b>, República Dominicana based company project: Working on developing insurance inscription
-                            features. React.JS, HTML, CSS, Node.JS, Scrum.
+                            <b>Scotiabank</b>, República Dominicana based company project:
+                            Developing features for insurance inscription. Technologies: React.JS, HTML, CSS, Node.JS, Scrum.
                             <br />
-                            <b>Scotiabank</b>, República Dominicana based company project: Worked on developing new credit card activation
-                            features. React.JS, HTML, CSS, Node.JS, Scrum.
+                            <b>Scotiabank</b>, República Dominicana based company project:
+                            Contributed to the development of new credit card activation features. Technologies: React.JS, HTML, CSS, Node.JS, Scrum.
                             <br />
-                            <b>Turtle Fashion</b>, Switzerland based company project: Working on developing features for the
-                            Turtle Fashion system. React.JS, HTML, CSS, Node.JS, Scrum.
+                            <b>Turtle Fashion</b>, Switzerland based company project:
+                            Working on enhancing features for the Turtle Fashion system. Technologies: React.JS, HTML, CSS, Node.JS, Scrum.
                             <br />
-                            <b>Qure4u</b>, U.S based company project: Working on developing new features and fixing existing
-                            ones for their systems dedicated to solving problems from the Medical area. PHP, MySQL,
-                            Scrum.
+                            <b>Qure4u</b>, U.S based company project:
+                            Involved in developing new features and resolving issues for their Medical area systems. Technologies: PHP, MySQL, Scrum.
                         </p>
                     </div>
                 </div>
@@ -59,8 +58,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Mar 2020 - Mar 2022</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            Worked on a survey system to lower the costs of external software licenses. Creating a new
-                            system to automate the internal performance evaluation. MS SQL Server, C#, .net 4.5, JWT.
+                            Contributed to the development of a survey system aimed at reducing external software license costs. Additionally, played a key role in creating a new system for automating internal performance evaluations. Utilized technologies such as MS SQL Server, C#, .NET 4.5, and JWT.
                         </p>
                     </div>
                 </div>
@@ -78,9 +76,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Sep 2018 - Mar 2020</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            Leading the development of new requirements of the bank for the car credit system developed
-                            on Oracle Service Cloud. Codeigniter, Jira, MS-SQL. Instructing the dev team in the bank
-                            architecture, Javascript and PHP.
+                            Led the development of new requirements for the bank's car credit system on Oracle Service Cloud. Employed technologies such as Codeigniter, Jira, and MS-SQL. Provided instruction to the development team on bank architecture, emphasizing expertise in JavaScript and PHP.
                         </p>
                     </div>
                 </div>
@@ -98,9 +94,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Jul 2016 - Mar 2020</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            Taking projects of the most important clients of the company like Banco Santander Chile, Banco
-                            Davivienda Colombia, among more. Instructing the dev team in Codeigniter, Javascript, Magento
-                            and Oracle Service Cloud (Oracle Customer Portal)
+                            Managed projects for major clients such as Banco Santander Chile and Banco Davivienda Colombia. Provided guidance to the development team with expertise in Codeigniter, JavaScript, Magento, and Oracle Service Cloud (Oracle Customer Portal).
                         </p>
                     </div>
                 </div>
@@ -118,10 +112,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Feb 2015 - Jul 2016</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            My first startup, the knowledge acquired was huge. Lean Startup, Kanban and all the good stuff.
-                            In this company we create software for school teachers that give tools and information to let
-                            them use all of his time in the class. This software received financing from the Chilean state and
-                            won first place in a contest in the university: Universidad de Santiago de Chile.
+                            Co-founded my first startup, acquiring extensive knowledge in Lean Startup, Kanban, and more. Our focus was on developing software for school teachers, providing tools and information to optimize their time in the classroom. This innovative software received financing from the Chilean state and secured first place in a contest at the Universidad de Santiago de Chile.
                         </p>
                     </div>
                 </div>
@@ -139,8 +130,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Nov 2013 - Feb 2015</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            My software development Job. Implement kanban methodology with Bitbucket creating new deployments for internal systems
-                            with codeigniter, MySQL and Javascript.
+                            Implemented the Kanban methodology using Bitbucket, creating new deployments for internal systems. Utilized technologies such as Codeigniter, MySQL, and JavaScript.
                         </p>
                     </div>
                 </div>
