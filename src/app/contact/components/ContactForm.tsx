@@ -118,8 +118,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkMode }) => {
             )
             :
             <div className={"max-w-md mx-auto pt-32 px-5" + (darkMode ? " text-white" : " text-black")}>
-                < h1 className="font-bold text-3xl py-1" > Thanks for your message!</h1 >
-                <h1 className="text-md py-1 px-6">I will do the impossible to reply to you ASAP!</h1>
+                <h1 className="font-bold text-3xl py-1" > Thanks for your message!</h1 >
+                <h1 className="text-md py-2">{"I'm committed to responding to you as promptly as possible. Your inquiry is important, and I appreciate your patience."}</h1>
             </div>
     );
 };
