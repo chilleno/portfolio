@@ -5,6 +5,7 @@ import fetchCommitData from '../util/fetchCommitData';
 interface ProjectDetailProps {
     darkMode: boolean;
     repository: string;
+    link: string;
     description: string;
 };
 
@@ -15,7 +16,7 @@ let className = {
     },
 };
 
-const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, description }) => {
+const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, link, description }) => {
     const [labels, setLabels] = useState<string[]>([]);
     const [values, setValues] = useState<number[]>([]);
     const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -52,7 +53,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, des
             data.map((element: any) => {
                 let commitDate = new Date(element.commit.committer.date);
                 let currentLabel = monthNames[commitDate.getMonth()] + ' ' + commitDate.getDate();
-                if (labels.indexOf(currentLabel) >= 0 && (values[labels.indexOf(currentLabel)] === undefined))  {
+                if (labels.indexOf(currentLabel) >= 0 && (values[labels.indexOf(currentLabel)] === undefined)) {
                     values[labels.indexOf(currentLabel)] = 0;
                 }
                 values[labels.indexOf(currentLabel)] = values[labels.indexOf(currentLabel)] + 1;
@@ -66,7 +67,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, des
         <div className={darkMode ? className.main.dark : className.main.light}>
             <div className="xl:w-8/12 lg:w-8/12 md:w-full sm:w-full gap-10 flex flex-col">
                 <div>
-                    <a className="font-bold underline text-4xl" href={"https://github.com/chilleno/" + repository}><h1>{repository}</h1></a>
+                    <a className="font-bold underline text-4xl" target="_blank" href={link}><h1>{repository}</h1></a>
                 </div>
                 <div>
                     <p className="text-xl xl:pr-20 lg:pr-20 md:pr-0 sm:pr-0">{description}</p>
