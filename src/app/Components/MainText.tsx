@@ -17,11 +17,9 @@ const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
             <div className="xl:w-6/12 sm:w-full flex flex-col gap-5">
                 <h1 className="font-normal">Hello there,</h1>
                 <h1 className="font-bold">I&apos;m Antonio.</h1>
-                <p className="">I&apos;m a software engineer since 2013.</p>
-                <p className="">Currently specializing in JavaScript and TypeScript.</p>
-                <p className="">I have a passion for helping new engineers in tech world.</p>
-                <p className="">I started building software on public since 2023.</p>
-                <p className="">I&apos;m currently based in Santiago, Chile 🇨🇱🌶️ and work at <a className="font-normal underline" href="https://www.imagemaker.com/">Imagemager S.A.</a> as a frontend engineer.</p>
+                <p className="">As a software engineer since 2013, I specialize in JavaScript and TypeScript. My passion lies in guiding new engineers in the tech world. Since 2023, I&apos;ve been actively building software by myself in my free time.</p>
+                <p className="">I&apos;m currently located in Santiago, Chile 🇨🇱🌶️</p>
+                <p className="">where I serve as a frontend engineer at <a className="font-normal underline" target='_blank' href="https://www.imagemaker.com/">Imagemager S.A.</a></p>
             </div>
         </div>
     );
