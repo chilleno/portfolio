@@ -27,20 +27,20 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, lin
         const today = new Date();
         const last7Days = [];
 
-        for (let i = 20; i >= 0; i--) {
+        for (let i = 150; i >= 0; i--) {
             const date = new Date(today);
             date.setDate(today.getDate() - i);
             const month = monthNames[date.getMonth()];
             const formattedDate = `${month} ${date.getDate()}`;
             last7Days.push(formattedDate);
         }
-
+        console.log(last7Days);
         return last7Days;
     };
 
     const initializeValues = () => {
         let returnValues: number[] = []
-        for (let i = 0; i <= 20; i++) {
+        for (let i = 0; i <= 150; i++) {
             returnValues.push(0);
         }
         return returnValues;
@@ -65,7 +65,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, lin
 
     return (
         <div className={darkMode ? className.main.dark : className.main.light}>
-            <div className="xl:w-8/12 lg:w-8/12 md:w-full sm:w-full gap-10 flex flex-col">
+            <div className="xl:w-6/12 lg:w-6/12 md:w-full sm:w-full gap-10 flex flex-col">
                 <div>
                     <a className="font-bold underline text-4xl" target="_blank" href={link}><h1>{repository}</h1></a>
                 </div>
@@ -73,7 +73,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, lin
                     <p className="text-xl xl:pr-20 lg:pr-20 md:pr-0 sm:pr-0">{description}</p>
                 </div>
             </div>
-            <div className="xl:w-4/12 lg:w-4/12 md:w-full sm:w-full h-40 flex border boder-2 border-white rounded-xl">
+            <div className="xl:w-6/12 lg:w-6/12 md:w-full sm:w-full h-50 flex border boder-2 border-white rounded-xl">
                 <ActivityGraph
                     darkMode={darkMode}
                     labels={labels}
