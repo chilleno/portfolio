@@ -40,13 +40,12 @@ const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
                     </div>
                 </div>
                 <p className="text-lg text-justify">
-                    I&apos;m a software engineer since 2013.
-                    Currently specializing in JavaScript and TypeScript.
-                    I have a passion for helping new engineers in tech world.
-                    I started building software on public since 2023.
+                    I&apos;ve been a software engineer since 2013, with a current focus on JavaScript and TypeScript.
+                    My enthusiasm extends to guiding new engineers in the tech world.
+                    Since 2023, I&apos;ve been creating my own software.
                 </p>
                 <p className="text-lg text-justify">
-                  I&apos;m currently building in public projects with Next.js, React.js, Prisma, TaildwindCSS, MongoDB and Figma. 
+                    I&apos;m currently building in public projects using Next.js, React.js, Prisma, Tailwind CSS and Supabase.
                 </p>
             </div>
         </div>
