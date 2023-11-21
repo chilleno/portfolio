@@ -76,7 +76,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Sep 2018 - Mar 2020</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
-                            Led the development of new requirements for the bank's car credit system on Oracle Service Cloud. Employed technologies such as Codeigniter, Jira, and MS-SQL. Provided instruction to the development team on bank architecture, emphasizing expertise in JavaScript and PHP.
+                            Led the development of new requirements for the bank&apos;s car credit system on Oracle Service Cloud. Employed technologies such as Codeigniter, Jira, and MS-SQL. Provided instruction to the development team on bank architecture, emphasizing expertise in JavaScript and PHP.
                         </p>
                     </div>
                 </div>
