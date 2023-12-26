@@ -19,7 +19,8 @@ const MainText: React.FC<MainTextProps> = ({ darkMode }) => {
                 <h1 className="font-bold">I&apos;m Antonio.</h1>
                 <p className="">As a software engineer since 2013, I specialize in JavaScript and TypeScript. My passion lies in guiding new engineers in the tech world. Since 2023, I&apos;ve been actively building software by myself in my free time.</p>
                 <p className="">I&apos;m currently located in Santiago, Chile 🇨🇱🌶️</p>
-                <p className="">where I serve as a frontend engineer at <a className="font-normal underline" target='_blank' href="https://www.imagemaker.com/">Imagemager S.A.</a></p>
+                <p className="">where I work as a fullstack engineer at <a className="font-normal underline" target='_blank' href="https://habitharbor.app/">HabirHarbor.app</a> my own side project.</p>
+                <p className="">{"I'm also looking for the next step on my career, feel free to get in touch"}</p>
             </div>
         </div>
     );
