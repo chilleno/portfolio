@@ -27,7 +27,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                     <div>
                         <h1 className="text-xl font-bold">Frontend Software Engineer</h1>
                         <h1 className="text-lg">Imagemaker · Full-time</h1>
-                        <h1 className="text-lg">Mar 2022 - Present</h1>
+                        <h1 className="text-lg">Mar 2022 - Dec 2023</h1>
                         <h1 className="text-lg">Chile</h1>
                         <p className="text-lg text-justify">
                             <b>Scotiabank</b>, República Dominicana based company project:
