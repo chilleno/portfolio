@@ -7,6 +7,7 @@ interface ProjectDetailProps {
     repository: string;
     link: string;
     description: string;
+    extraInfo?: string;
 };
 
 let className = {
@@ -16,7 +17,7 @@ let className = {
     },
 };
 
-const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, link, description }) => {
+const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, link, description, extraInfo }) => {
     const [labels, setLabels] = useState<string[]>([]);
     const [values, setValues] = useState<number[]>([]);
     const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -72,15 +73,23 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, lin
                 <div>
                     <p className="text-xl xl:pr-20 lg:pr-20 md:pr-0 sm:pr-0">{description}</p>
                 </div>
-            </div>
-            <div className="xl:w-6/12 lg:w-6/12 md:w-full sm:w-full h-50 flex border boder-2 border-white rounded-xl">
                 {
-                    <ActivityGraph
-                        darkMode={darkMode}
-                        labels={labels}
-                        values={values}
-                    />
+                    extraInfo &&
+                    <div>
+                        <b className="text-xl xl:pr-20 lg:pr-20 md:pr-0 sm:pr-0">{extraInfo}</b>
+                    </div>
                 }
+            </div>
+            <div className="xl:w-6/12 lg:w-6/12 md:w-full sm:w-full flex  items-center">
+                <div className="max-h-[90px] flex border boder-2 border-white rounded-xl">
+                    {
+                        <ActivityGraph
+                            darkMode={darkMode}
+                            labels={labels}
+                            values={values}
+                        />
+                    }
+                </div>
             </div>
         </div>
     )
