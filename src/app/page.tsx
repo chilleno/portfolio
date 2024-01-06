@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from "./Components/Header";
 import Avatar from "./Components/Avatar";
 import MainText from './Components/MainText';
+import ProjectList from "./Components/ProjectList";
 import Links from "./Components/Links";
 import Footer from "./Components/Footer";
 
@@ -32,6 +33,9 @@ export default function Home() {
         darkMode={darkMode}
       />
       <MainText
+        darkMode={darkMode}
+      />
+      <ProjectList
         darkMode={darkMode}
       />
       <Links
