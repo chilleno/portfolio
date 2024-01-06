@@ -6,8 +6,8 @@ interface ExperienceProps {
 
 let className = {
     main: {
-        dark: "min-h-screen flex flex-row pt-20 sm:px-12 sm:text-justify text-xl font-thin text-white",
-        light: "min-h-screen flex flex-row pt-20 sm:px-12 sm:text-justify text-xl font-thin text-black",
+        dark: "min-h-screen flex flex-row pt-20 sm:px-12 text-xl font-thin text-white",
+        light: "min-h-screen flex flex-row pt-20 sm:px-12 text-xl font-thin text-black",
     },
 };
 
@@ -29,7 +29,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Imagemaker · Full-time</h1>
                         <h1 className="text-lg">Mar 2022 - Dec 2023</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg ">
                             <b>Scotiabank</b>, República Dominicana based company project:
                             Developing features for insurance inscription. Technologies: React.JS, HTML, CSS, Node.JS, Scrum.
                             <br />
@@ -57,7 +57,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Sercotec · Full-time</h1>
                         <h1 className="text-lg">Mar 2020 - Mar 2022</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg">
                             Contributed to the development of a survey system aimed at reducing external software license costs. Additionally, played a key role in creating a new system for automating internal performance evaluations. Utilized technologies such as MS SQL Server, C#, .NET 4.5, and JWT.
                         </p>
                     </div>
@@ -75,7 +75,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Banco Santander Chile · Full-time</h1>
                         <h1 className="text-lg">Sep 2018 - Mar 2020</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg ">
                             Led the development of new requirements for the bank&apos;s car credit system on Oracle Service Cloud. Employed technologies such as Codeigniter, Jira, and MS-SQL. Provided instruction to the development team on bank architecture, emphasizing expertise in JavaScript and PHP.
                         </p>
                     </div>
@@ -93,7 +93,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">MPSoft · Full-time</h1>
                         <h1 className="text-lg">Jul 2016 - Mar 2020</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg ">
                             Managed projects for major clients such as Banco Santander Chile and Banco Davivienda Colombia. Provided guidance to the development team with expertise in Codeigniter, JavaScript, Magento, and Oracle Service Cloud (Oracle Customer Portal).
                         </p>
                     </div>
@@ -111,7 +111,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">Codelovers Chile · Full-time</h1>
                         <h1 className="text-lg">Feb 2015 - Jul 2016</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg ">
                             Co-founded my first startup, acquiring extensive knowledge in Lean Startup, Kanban, and more. Our focus was on developing software for school teachers, providing tools and information to optimize their time in the classroom. This innovative software received financing from the Chilean state and secured first place in a contest at the Universidad de Santiago de Chile.
                         </p>
                     </div>
@@ -129,7 +129,7 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                         <h1 className="text-lg">SuksaSuksa · Full-time</h1>
                         <h1 className="text-lg">Nov 2013 - Feb 2015</h1>
                         <h1 className="text-lg">Chile</h1>
-                        <p className="text-lg text-justify">
+                        <p className="text-lg ">
                             Implemented the Kanban methodology using Bitbucket, creating new deployments for internal systems. Utilized technologies such as Codeigniter, MySQL, and JavaScript.
                         </p>
                     </div>
