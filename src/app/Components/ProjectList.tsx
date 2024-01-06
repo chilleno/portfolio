@@ -16,6 +16,7 @@ interface Project {
     private: boolean;
     link: string;
     description: string;
+    extraInfo?: string;
 }
 
 let projects: Project[] = [
@@ -23,7 +24,8 @@ let projects: Project[] = [
         repository: "HabitHarbor",
         private: true,
         link:"https://habitharbor.app/",
-        description: 'An app inspired by the principles of the "Atomic Habits" book, HabitHarbor is more than just a task manager. It features a comprehensive suite, including a Pomodoro Clock, Water Intake Tracker, and more.'
+        description: 'An app inspired by the principles of the "Atomic Habits" book, HabitHarbor is more than just a task manager. It features a comprehensive suite, including a Pomodoro Clock, Water Intake Tracker, and more.',
+        extraInfo:"Get #14 on Product Hunt, with 30+ upvotes."
     },
     {
         repository: "NSFTA",
@@ -47,6 +49,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ darkMode }) => {
                             repository={project.repository}
                             link={project.link}
                             description={project.description}
+                            extraInfo={project.extraInfo}
                         />
                     ))
                 }
