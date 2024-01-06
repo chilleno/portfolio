@@ -11,8 +11,8 @@ interface ProjectDetailProps {
 
 let className = {
     main: {
-        dark: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20 gap-5 xl:px-0 lg:px-0 md:px-0 sm:px-0 sm:text-justify text-xl font-thin text-white",
-        light: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20  xl:px-0 lg:px-0 md:px-0 sm:px-0 sm:text-justify text-xl font-thin text-black",
+        dark: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20 gap-5 xl:px-0 lg:px-0 md:px-0 sm:px-0 text-xl font-thin text-white",
+        light: "flex xl:flex-row lg:flex-row md:flex-col sm:flex-col pt-20  xl:px-0 lg:px-0 md:px-0 sm:px-0 text-xl font-thin text-black",
     },
 };
 
@@ -74,11 +74,13 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ darkMode, repository, lin
                 </div>
             </div>
             <div className="xl:w-6/12 lg:w-6/12 md:w-full sm:w-full h-50 flex border boder-2 border-white rounded-xl">
-                <ActivityGraph
-                    darkMode={darkMode}
-                    labels={labels}
-                    values={values}
-                />
+                {
+                    <ActivityGraph
+                        darkMode={darkMode}
+                        labels={labels}
+                        values={values}
+                    />
+                }
             </div>
         </div>
     )
