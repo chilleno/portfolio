@@ -24,7 +24,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         <header className={darkMode ? className.main.dark : className.main.light}>
             <a href="/" className="hover:font-bold hover:cursor-pointer"><h1 className="text-md font-bold xl:mr-40 lg:mr-10">Antonio <span className="xl:inline lg:inline md:inline sm:hidden">González</span></h1></a>
             <div className="flex gap-5 text-md">
-                <a href="/projects" className="hover:font-bold xl:min-w-[70px] lg:min-w-[70px]">Projects</a>
                 <a href="/cv" className="hover:font-bold xl:min-w-[30px] lg:min-w-[30px]">CV</a>
                 <a href="/contact" className="hover:font-bold xl:min-w-[70px] lg:min-w-[70px]">Contact</a>
                 <h1 className="hover:font-bold hover:cursor-pointer xl:min-w-[70px] lg:min-w-[70px]">
